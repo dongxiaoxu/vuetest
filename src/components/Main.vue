@@ -67,6 +67,7 @@
     
     <el-main>
       <el-table :data="tableData">
+        <el-table-column prop="index" label="序号" width="140"></el-table-column>
         <el-table-column prop="date" label="日期" width="140">
         </el-table-column>
         <el-table-column prop="name" label="姓名" width="120">
@@ -89,7 +90,7 @@ export default {
         address: '上海市普陀区金沙江路 1518 弄'
       };
       return {
-        tableData: Array(20).fill(item)
+        tableData: Array(10).fill(item)
       }
     },
     methods : {
